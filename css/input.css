@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+	--color-primary-50: #fff7eb;
+	--color-primary-100: #fee7c7;
+	--color-primary-200: #fecd89;
+	--color-primary-300: #fda942;
+	--color-primary-400: #fc9123;
+	--color-primary-500: #f66b0a;
+	--color-primary-600: #da4905;
+	--color-primary-700: #b52e08;
+	--color-primary-800: #93230d;
+	--color-primary-900: #791e0e;
+	--color-primary-950: #450c03;
+}
+
+.item-card {
+	@apply bg-white rounded-lg p-4 flex gap-4;
+}
+
+.btn-primary {
+	@apply w-full bg-primary-400 text-white rounded-full py-3 font-semibold hover:bg-primary-500 mb-4 cursor-pointer;
+}
+
+.btn-secondary {
+	@apply flex-1 border-2 border-gray-800 rounded-full py-3 font-semibold hover:bg-gray-100 cursor-pointer;
+}
+
+.btn-error {
+	@apply flex-1 border-2 border-red-600 text-red-600 rounded-full py-3 font-semibold hover:bg-red-50 cursor-pointer;
+}
+
+.text-secondary {
+	@apply text-gray-600 text-sm;
+}
